@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>환상의 나라☆에버랜드</title>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') ;
+
+        .ng-font {
+            /* 웹 폰트 지정(CSS3 기능), 'Nanum Gothic'글꼴을 적용하고 없다면 '돋움' 글꼴로 대체 */
+            font-family:'Cafe24Ssurround', 돋움;
+        }
+        @font-face {
+            font-family: 'Cafe24Ssurround';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        ul{
+            list-style: none;
+        }
+        ul, li{
+            padding: 5px;
+        }
+        label{
+            font-size: 20px;
+            font-style: italic;
+        }
+        legend{
+            font-weight: bold;
+            font-size: 30px;
+        }
+        meter{
+            width: 150px;
+            height: 45px;
+        }
+        .subm{
+            /*  버튼스타일*/
+
+            display: block;
+            float: right;
+            background-color: #fff;
+            border: 1px solid #dedede;
+            cursor:pointer;
+            padding:5px 10px 6px 7px;
+            font-size: 20px;
+        }
+
+        .subm:hover{
+            background-color: #9933cc;
+            border: 1px solid #c6d880;
+            color: #ffffff;
+
+        }
+    </style>
+</head>
+<body class="ng-font">
+<form>
+    <fieldset>
+        <fieldset>
+            <legend>가입정보</legend>
+            <ul>
+                <li><label>아이디:</label>
+                <input type="text" minlength="6" maxlength="15">
+                <small style="color: red">6~15자리 이내의 영문과 숫자</small>
+                </li>
+                <li><label>비밀번호:</label>
+                    <input type="password" minlength="8" maxlength="18">
+                    <small style="color: red">8~18자리 이내의 영문과 숫자와 특수문자</small>
+                </li>
+                <li><label>비밀번호 확인:</label>
+                    <input type="password" minlength="8" maxlength="18">
+                </li>
+            </ul>
+            <input type="submit" value="제출하기">
+            <input type="reset" value="다시쓰기">
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>개인정보</legend>
+            <ul>
+                <li><label>이름:</label>
+                <input type="text"> </li>
+                <li><label>나이:</label>
+                    <input type="text"> </li>
+                <li><label>성별:</label>
+                    <label><input type="radio">남성</label>
+                    <label><input type="radio">여성</label>
+                </li>
+                <li>
+                    <label>지역:</label><br>
+                    <select size="3" id="class" multiple>
+                        <option value="archi" selected>서울</option>
+                        <option value="merchanic">인천</option>
+                        <option value="indust">경기</option>
+                        <option value="elec">광주</option>
+                        <option value="computer">대전</option>
+                        <option value="chemical">대구</option>
+                        <option value="chemical">강원도</option>
+                        <option value="chemical">부산</option>
+                        <option value="chemical">전라도</option>
+                        <option value="chemical">경상도</option>
+                        <option value="chemical">충청도</option>
+                        <option value="chemical">제주도</option>
+                    </select>
+                </li>
+                <li><label>이메일:</label>
+                    <input type="email"> </li>
+                <li><label>휴대폰:</label>
+                    <input type="tel"> </li>
+                <li><label>SNS</label><br>
+                    <p><label><input type="checkbox">홈페이지 : <input type="url"></label></p>
+                    <p> <label><input type="checkbox">인스타그램 : <input type="text"></label></p>
+                    <p><label><input type="checkbox">트위터 : <input type="text"></label></p>
+                </li>
+                <li><p><label>가입계기:</label></p>
+                    <input type="checkbox">TV광고
+                    <input type="checkbox">인터넷 광고
+                    <input type="checkbox">주변 권유
+                    <input type="checkbox">팜플렛
+
+            </ul>
+            <input type="submit" value="제출하기">
+            <input type="reset" value="다시쓰기">
+        </fieldset>
+        <label style="font-weight:bold; font-size:22px;">작성률 90%</label><br>
+        <meter min="0" max="100" value="90"></meter>
+        <button type="submit" class="subm"><a href="test2.html"> 다음 페이지로 넘어가기 </a></button>
+    </fieldset>
+</form>
+</body>
+</html>

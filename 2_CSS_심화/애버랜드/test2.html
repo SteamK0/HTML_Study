@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>환상의 나라☆에버랜드</title>
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') ;
+
+    .ng-font {
+      /* 웹 폰트 지정(CSS3 기능), 'Nanum Gothic'글꼴을 적용하고 없다면 '돋움' 글꼴로 대체 */
+      font-family:'Cafe24Ssurround', 돋움;
+    }
+    @font-face {
+      font-family: 'Cafe24Ssurround';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    ul{
+      list-style: none;
+    }
+    ul, li{
+      padding: 5px;
+    }
+    label{
+      font-size: 25px;
+      font-weight: bold;
+    }
+    legend{
+      font-weight: bold;
+      font-size: 30px;
+    }
+    meter{
+      width: 150px;
+      height: 45px;
+    }
+    .subm{
+      /*  버튼스타일*/
+
+      display: block;
+      float: right;
+      background-color: #fff;
+      border: 1px solid #dedede;
+      cursor:pointer;
+      padding:5px 10px 6px 7px;
+      font-size: 20px;
+    }
+
+    .subm:hover{
+      background-color: #9933cc;
+      border: 1px solid #c6d880;
+      color: #ffffff;
+
+    }
+  </style>
+</head>
+<body class="ng-font">
+<form>
+  <fieldset>
+    <ul>
+      <li><p><label>방문예정날짜</label></p>
+      <input type="date"></li>
+      <hr>
+      <li><label>선호하는 놀이기구 난이도</label></li>
+      <input type="range" value="3" min="1" max="5" step="1">
+      <br><pre style="font-weight: bold; font-size: 15px;"> 1  2  3  4  5</pre>
+    </ul>
+    <input type="submit" value="제출하기">
+    <input type="reset" value="다시쓰기">
+  </fieldset>
+  <button type="submit" class="subm"><a href="outro.html"> 다음 페이지로 넘어가기 </a></button>
+</form>
+</body>
+</html>
