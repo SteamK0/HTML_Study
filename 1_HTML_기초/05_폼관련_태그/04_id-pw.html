@@ -17,8 +17,9 @@
 <body>
   <form>
     <fieldset>
+<!--   for 속성에 input 태그의 id를 지정하면 화면상의 마우스 클릭 시 해당 input 요소로 이동하게 해 준다.   -->
       <label>아이디: <input type="text" id="user_id" size="10"></label>
-      <label>비밀번호: <input type="password" id="user_pw" size="10"></label>
+      <label for="user_pw">비밀번호: <input type="password" id="user_pw" size="10"></label>
       <input type="submit" value="로그인">
     </fieldset>
   </form>
