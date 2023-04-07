@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Box Model Example</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        @font-face {
+            font-family: 'KCCChassam';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;}
+
+        @font-face {
+            font-family: 'SBAggroB';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        #ng-font{
+            font-family:SBAggroB;
+        }
+        body {
+            margin: 0;
+        }
+
+        .header {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            background-color: #ffd8d8;
+            background: radial-gradient(circle at 50% 50%, white,#ffd8d8);
+            font-family: SBAggroB;
+        }
+
+        .nav {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            background-color: #f2f2f2;
+            border: 1px solid plum;
+            background: radial-gradient(white, pink, plum);
+        }
+
+        .nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+
+        }
+
+        .nav li {
+            display: inline-block;
+            margin: 0 90px;
+            text-weight:bold;
+            border:2px solid black;
+            padding:10px;
+            text-decoration:none;
+            border-radius:5px;
+            border-color:plum;
+            background-color:#ffd8d8;
+            font-family:KCCChassam ;
+            font-size: 20px ;
+
+        }
+        .section ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline;}
+
+        .section ul li {
+            display: inline;
+            margin: 0 170px;
+            font-size:20px;
+            font-weight:bold;
+            font-family: SBAggroB;
+        }
+        .section {
+            width: 80%;
+            /*height: 300px;*/
+            padding: 5px;
+            text-align: center;
+            background-color: #ffffff;;
+            display: inline-block;
+        }
+
+        .sidebar {
+            width: 15%;
+            height: 300px;
+            padding: 10px;
+            text-align: center;
+            float: left;
+            background-color: #ffb2f5;
+            display: inline-block;
+            background:linear-gradient(to bottom,#ffb2f5,white 30%, #ffb2f5 ) ;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar li {
+            margin: 5px 0;
+        }
+
+        .footer {
+            width: 100%;
+            /*padding: 20px;*/
+            text-align: center;
+            margin-bottom: 0;
+            clear: both;
+            background-color: #4f4f4f;
+            color: #fff;
+        }
+        div {
+            margin: 10px;
+            /*border: 1px solid #ccc;*/
+            border-radius: 5px;
+        }
+        #inline img {
+            display:inline;
+            margin:30px;
+            width:26%;
+            height:500px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>I LOVE Merry</h1>
+</div>
+
+<div class="nav">
+    <ul>
+        <li><a href="web1.html">스튜디오</a></li>
+        <li><a href="web2.html">드레스</a></li>
+        <li><a href="web3.html">메이크업</a></li>
+    </ul>
+</div>
+<div class="sidebar">
+    <h3>[빠른 상담]</h3>
+    <ul>
+        <li>신청자 <input type="text" id="name"></li>
+        <li>연락처 <input type="text" id="tell"></li>
+        <li>코멘트<textarea name="intro" cols="21" rows="8"></textarea></li>
+        <input type="submit" value="OK">
+        <input type="reset" value="다시입력">
+    </ul>
+</div>
+<div class="section">
+    <div id="inline">
+        <a href="http://roserosa.co.kr/"><img src="images/드1.png"></a>
+        <a href="https://selectionh.s-wed.co.kr/"><img src="images/드2.png"></a>
+        <a href="https://www.instagram.com/bridesonyunhui/?hl=ko"><img src="images/드3.png"></a>
+    </div>
+    <div>
+        <ul>
+            <li>로즈로사</li>
+            <li>셀렉션H</li>
+            <li>브라이드 손윤희</li>
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="footer">
+    <footer>
+        <p>I LOVE Merry 인천광역시 부평구 경원대로 1366 7층<br>
+            사업자 번호:231-24-53613 대표:김나경 이메일:marry me@gamil.com</p>
+    </footer>
+</div>
+</body>
+</html>
