@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Table CSS</title>
+    <style>
+      table, td {
+        border:1px solid #ccc;
+      }
+      td {
+        height:100px;
+        padding:20px;
+      }
+    /* 셀 안의 컨텐츠를 수직으로 어떻게 정렬할 지에 대한 옵션 */
+      .var1 {vertical-align: top;}
+      .var2 {vertical-align: bottom;}
+      .var3 {vertical-align: middle;}
+    </style>
+</head>
+<body>
+  <table>
+    <caption>vertical-alignment</caption>
+    <tr>
+      <td class="var1">alignment</td>
+      <td class="var2">alignment</td>
+      <td class="var3">alignment</td>
+    </tr>
+  </table>
+</body>
+</html>
