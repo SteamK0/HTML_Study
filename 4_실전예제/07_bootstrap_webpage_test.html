@@ -1,0 +1,1311 @@
+
+<!doctype html>
+<!--[if IE 7 ]>    <html lang="ko-kr" class="isie ie7 oldie no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="ko-kr" class="isie ie8 oldie no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="ko-kr" class="isie ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="ko-kr" class="no-js">
+<!--<![endif]-->
+
+<head>
+  <title>Aty 아티컴퍼니 - 스마트한 쇼핑몰, 홈페이지, 모바일</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="naver-site-verification" content="5c1dbe7538eeb0c3bea35e10c5ce187875e27bcf"/>
+  <meta name="description" content="무료 홈페이지 제작, 홈페이지/쇼핑몰 빌더 및 웹호스팅, 도메인 등의 서비스를 제공합니다." />
+  <meta name="author" content="Aty" />
+  <meta name="keywords" content="아티, aty, 무료홈페이지, 홈페이지제작" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/images/atyfavicon.ico" />
+
+  <!-- this styles only adds some repairs on idevices  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Prevent auto changed font color(number format) on iPhone Safari -->
+  <meta name="format-detection" content="telephone=no">
+
+
+  <!-- ######### CSS STYLES ######### -->
+  <link rel="stylesheet" href="/css/style.min.css?v=2019051301" type="text/css" media="all" />
+  <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css" />
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+              m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-62237228-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+  <script>
+    var admitArr = ['login','transferOK','errorInfo','dgpUpgrade','addInfo','loginError','FAQ1','FAQ2','FAQ3','FAQ4','FAQ5','FAQ6','FAQ7','FAQ8','FAQ9'];
+    if ($(location).attr('href').split('#').length > 1) {
+      if (admitArr.indexOf($(location).attr('href').split('#')[1]) == -1) {
+        location.href = $(location).attr('href').split('#')[0];
+      }
+    }
+  </script>
+</head>
+
+<body>
+<header id="header" class="white">
+  <div id="trueHeader">
+    <div class="wrapper">
+      <div class="container">
+
+        <!-- Logo -->
+        <div class="logo">
+          <!-- <a href="/main" id="logo" title="Aty"></a> -->
+          <a href="/main" id="logo" title="Aty"></a>
+        </div>
+
+        <!-- Menu -->
+        <div class="menu_main">
+          <div class="navbar yamm navbar-default">
+            <div class="container">
+              <div class="navbar-header">
+                <div class="navbar-toggle .navbar-collapse .pull-right " data-toggle="collapse" data-target="#navbar-collapse-1">
+                  <button type="button"> <i class="fa fa-bars"></i></button>
+                </div>
+              </div>
+              <div id="navbar-collapse-1" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                  <li> <a href="/design" class="">템플릿</a></li>
+                  <li> <a href="/myAty/servicePlan/view" class="">요금제</a></li>
+                  <li> <a href="/domain/searchDomain" class="">도메인</a></li>
+                  <li> <a href="/support" class="">고객센터</a></li>
+                  <li> <a href="https://designcenter.aty.kr/main#" target="_blank">디자인센터</a></li>
+                  <li><a href="#login" id="btnJoin" class="readmore_but5 text-center btn-login">회원가입</a></li>
+                  <li><a href="#login" id="btnLogin" class="readmore_but5 text-center btn-login">로그인</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end menu -->
+
+        <!-- start login -->
+        <div class="remodal login" data-remodal-id="login">
+          <header><h3 id="loginTitle">로그인</h3></header>
+          <fieldset class="body">
+            <div class="or">or</div>
+            <form id="loginFrm" name="loginFrm" class="sky-form" method="post" accept-charset="utf-8">
+              <section class="section-wrapper">
+                <div class="row">
+                  <label class="label email col col-4">이메일</label>
+                  <div class="col col-8">
+                    <label class="input">
+                      <i class="icon-append icon-user"></i>
+                      <input type="email" name="email">
+                      <b class="tooltip tooltip-top-right">이메일 주소가 회원아이디로 사용됩니다.</b>
+                    </label>
+                    <div class="note text-left"><label class="same_radio_click" data-name="type" data-value="join"><input name="type" id="typeJoin" type="radio" value="join"></label></div>
+                    <div class="note text-left"><label class="same_radio_click" data-name="type" data-value="login"><input name="type" id="typeLogin" type="radio" value="login" checked></label></div>
+                  </div>
+                </div>
+              </section>
+              <section class="section-wrapper">
+                <div class="row">
+                  <label class="label passwd col col-4">비밀번호</label>
+                  <div class="col col-8">
+                    <label class="input">
+                      <i class="icon-append icon-lock"></i>
+                      <input type="password" name="password" onkeydown="loginFrmPressEnter();">
+                    </label>
+                  </div>
+                </div>
+              </section>
+            </form>
+            <p class="text-center"><button id="loginFrmSubmit" class="remodal-confirm">로그인</button></p>
+            <div class="note text-left findpw"><a href="#forgotPw" class="modal-opener">비밀번호 찾기</a></div>
+            <div class="note text-left rememberid">
+              <div class="checkbox-wrapper">
+                <i class="check-icon" id="idCheckIcon"></i>
+                <input type="checkbox" id="idSaveCheck"/>
+              </div>
+              <label for="idSaveCheck">내 계정 기억하기</label>
+            </div>
+            <div class="text-center joinus">
+              아직 계정이 없으세요? <a href="javascript:joinTrigger();">회원가입</a>
+            </div>
+            <div class="note text-left" id="confirmPolicy">
+              <div class="text-center agreement">
+                '가입하기'를 클릭하면
+                <a href="/about/terms" target="_blank"> 이용약관</a> 과 <a href="/about/privacy" target="_blank"> 개인정보 취급방침</a>
+                에 동의하는것으로 간주합니다.
+              </div>
+            </div>
+            <em class="note text-center state-error joinalert" id="errorTXT"></em>
+            <section class="socialBg">
+              <div class="row">
+                <a href="/login/naver" class="btn-socialLogin login-naver" data-auth="naver"></a>
+                <a href="/login/google" class="btn-socialLogin login-google" data-auth="google"></a>
+                <a href="/login/facebook" class="btn-socialLogin login-facebook" data-auth="facebook"></a>
+              </div>
+            </section>
+          </fieldset>
+        </div>
+        <!-- end login -->
+
+        <!-- start Forgot Password -->
+        <div class="remodal short findpw" data-remodal-id="forgotPw">
+          <form id="findPWFrm" name="findPWFrm" class="sky-form" method="post" accept-charset="utf-8">
+            <input type="hidden" name="type" value="find">
+            <header><h3>비밀번호 찾기</h3></header>
+            <fieldset>
+              <section class="wrapper">
+                <div class="row">
+                  <label class="label email col col-4">이메일 주소</label>
+                  <div class="col col-8">
+                    <label class="input">
+                      <i class="icon-append icon-user"></i>
+                      <input type="email" name="email">
+                    </label>
+                    <div class="note text-left"><label id="findPWerrorTXT">가입 시 입력한 이메일 주소를 입력하세요.</label></div>
+                  </div>
+                </div>
+              </section>
+            </fieldset>
+          </form>
+          <p class="text-center btn-wrapper"><button id="findPWSubmit" class="remodal-confirm">임시 비밀번호 발송</button></p>
+        </div>
+        <!-- end Forgot Password -->
+
+        <div class="remodal sky-form" data-remodal-id="loginError">
+          <header><h3>로그인 정보 오류</h3></header>
+          <section>
+            <div class="row">
+              <div class="alert-text" id="loginErrTXT"></div>
+            </div>
+          </section>
+          <p class="text-center"><button class="remodal-confirm" onclick="location.href='/myAty'">확인</button></p>
+        </div>
+
+        <div class="remodal sky-form orderAlert" data-remodal-id="noSupportMobile">
+          <header><h3>안내</h3></header>
+          <section>
+            <div class="row">
+              <div class="alert-text">
+                모바일에서는 신청이 불가능합니다.<br />
+                PC에서 신청해 주세요.
+              </div>
+            </div>
+          </section>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+<!-- end 상단메뉴 -->
+
+<div class="clearfix"></div>
+<script>
+  function labelActiveValidation(target) {
+    if (target.closest(".row").children(".label").hasClass("active")) {
+      if (target.val()=='') {
+        target.closest(".row").children(".label").removeClass("active");
+      }
+    } else {
+      target.closest(".row").children(".label").addClass("active");
+      target.select();
+    }
+  }
+
+  function labelActivation(target) {
+    target.closest(".row").children(".label").addClass("active");
+    if (!$('.btn-socialLogin').hasClass('active')) {$("#errorTXT").html('');}
+  }
+
+  function joinTrigger(){
+    $('#btnJoin').trigger('click');
+  }
+
+  function setCookie(cookieName, value, exdays){
+    var exdate = new Date();
+    exdate.setDate(exdate.getDate() + exdays);
+    var cookieValue = escape(value) + ((exdays==null) ? "" : "; expires=" + exdate.toGMTString());
+    document.cookie = cookieName + "=" + cookieValue;
+  }
+
+  function deleteCookie(cookieName){
+    var expireDate = new Date();
+    expireDate.setDate(expireDate.getDate() - 1);
+    document.cookie = cookieName + "= " + "; expires=" + expireDate.toGMTString();
+  }
+
+  function getCookie(cookieName) {
+    cookieName = cookieName + '=';
+    var cookieData = document.cookie;
+    var start = cookieData.indexOf(cookieName);
+    var cookieValue = '';
+    if(start != -1){
+      start += cookieName.length;
+      var end = cookieData.indexOf(';', start);
+      if(end == -1)end = cookieData.length;
+      cookieValue = cookieData.substring(start, end);
+    }
+    return unescape(cookieValue);
+  }
+
+  $(document).ready(function() {
+
+    setTimeout(function() {$("input:text").first().focus();}, 0);
+
+    $(".checkbox-wrapper").click(function() {
+      var $checkboxIcon = $(this).find(".check-icon");
+      var $checkbox = $(this).find('input[type="checkbox"]');
+      if ( $checkboxIcon.hasClass("checked") ) {
+        $checkboxIcon.removeClass("checked");
+        $checkbox.prop("checked", false);
+      } else {
+        $checkboxIcon.addClass("checked");
+        $checkbox.prop("checked", true);
+      }
+    });
+    /*
+                $('input[name="email"]').blur(function () {
+
+                    var email = $('input[name="email"]').val();
+
+                    //로그인시에는 맴버에 있는지만 확인해서 구분해주면 된다~
+                    if (email && $('input[name="email"]').closest(".remodal-wrapper").css('display') != 'none') {
+                        var pw = $('input[name="password"]').val();
+                        if ($('#loginFrm [name=type]:checked').val() == 'login') {
+                            $.ajax({
+                                url: "/login/member_check",
+                                type: "POST",
+                                data: {'email':email},
+                                success: function(returnData, textStatus) { // n 매겨변수가 리턴 값으로 돌아온다.
+                                    if (returnData.substring(0, 1) == 'N') {
+                                        $('.login-naver').focus();
+                                        $('.login-google').addClass('obj-disabled');
+                                        $('.login-facebook').addClass('obj-disabled');
+                                        $('input[name="password"]').addClass('obj-disabled');
+                                    }
+                                    else if (returnData.substring(0, 1) == 'G') {
+                                        $('.login-naver').addClass('obj-disabled');
+                                        $('.login-google').focus();
+                                        $('.login-facebook').addClass('obj-disabled');
+                                        $('input[name="password"]').addClass('obj-disabled');
+                                    }
+                                    else if (returnData.substring(0, 1) == 'F') {
+                                        $('.login-naver').addClass('obj-disabled');
+                                        $('.login-google').addClass('obj-disabled');
+                                        $('.login-facebook').focus();
+                                        $('input[name="password"]').addClass('obj-disabled');
+                                    }
+                                    else if (returnData.substring(0, 1) == 'A') {
+
+                                    }
+
+                                    if (pw.length > 0) {
+                                        $('#loginFrmSubmit').trigger('click');
+                                    }
+                                                                }
+                            });
+                        }
+                        else { //회원가입시에는 해당 이메일에 맞는 인증으로 유도해준다.
+                            var mailCompany = email.split('@');
+                            if (mailCompany[1]) {
+                                if (mailCompany[1].toLowerCase() == "naver.com") {
+                                    $('.login-naver').focus();
+                                    $('.login-google').addClass('obj-disabled');
+                                    $('.login-facebook').addClass('obj-disabled');
+                                }
+                                else if (mailCompany[1].toLowerCase() == "gmail.com") {
+                                    $('.login-naver').addClass('obj-disabled');
+                                    $('.login-google').focus();
+                                    $('.login-facebook').addClass('obj-disabled');
+                                }
+                            }
+                        }
+                    }
+                });
+      */
+    $('input[name="email"]').click(function () {
+      $('.btn-socialLogin').removeClass('obj-disabled');
+      $('.btn-socialLogin').removeClass('active');
+      $('input[name="password"]').removeClass('obj-disabled');
+      $("#errorTXT").html('');
+    });
+    $('.btn-login').click(function () {
+      $('.btn-socialLogin').removeClass('obj-disabled');
+      $('.btn-socialLogin').removeClass('active');
+      $('input[name="password"]').removeClass('obj-disabled');
+      $("#errorTXT").html('');
+    });
+
+    var loginErr = '';
+    if (loginErr) {
+      if (loginErr == 'naver') {
+        $('.login-naver').addClass('active');
+        $('.login-google').addClass('obj-disabled');
+        $('.login-facebook').addClass('obj-disabled');
+        $('#errorTXT').html('이미 naver 계정으로 가입되어 있습니다.');
+      }
+      else if (loginErr == 'google') {
+        $('.login-naver').addClass('obj-disabled');
+        $('.login-google').addClass('active');
+        $('.login-facebook').addClass('obj-disabled');
+        $('#errorTXT').html('이미 google 계정으로 가입되어 있습니다.');
+      }
+      else if (loginErr == 'facebook') {
+        $('.login-naver').addClass('obj-disabled');
+        $('.login-google').addClass('obj-disabled');
+        $('.login-facebook').addClass('active');
+        $('#errorTXT').html('이미 facebook 계정으로 가입되어 있습니다.');
+      }
+    }
+
+    var inputEmail = $('input[name="email"]');
+    var inputPwd = $('input[name="password"]');
+    $('#btnJoin').click(function() {
+      $("#errorTXT").html('');
+      inputEmail.val('');
+      inputPwd.val('');
+      inputEmail.select();
+      $('.findpw').css("display", "none");
+      $('.joinus').css("display", "none");
+      $('.rememberid').css("display", "none");
+      $('.agreement').css("display", "block");
+
+      //IE Bugfix Start : IE에서 common.js 에 .on() 스크립트가 작동하지 않아 똑같은 스크립트 내용을 헤더에 추가(common.js 에 있는 스크립트 내용과 동일하여 정리필요)
+      $('#loginFrm [name=type]').each(function(e) {
+        $(this).prop('checked', false);
+      });
+      $('#loginFrm #typeJoin').prop('checked', true);
+      $('#loginTitle').html('회원가입');
+      $('#loginFrmSubmit').html('가입하기');
+      if ($('#loginFrm [name=type]:checked').val() == 'join') {
+        $('#confirmPolicy').show();
+      } else {
+        $('#confirmPolicy').hide();
+      }
+      $('#loginFrm input[name="password"]').val('');
+      $('#loginFrm input[name="email"]').val('');
+      // IE Bugfix END
+
+      // labelActiveValidation(inputEmail);
+      // labelActiveValidation(inputPwd);
+    });
+    $('#btnLogin').click(function() {
+      $('.findpw').css("display", "block");
+      $('.joinus').css("display", "block");
+      $('.rememberid').css("display", "block");
+      $("#errorTXT").html('');
+      // labelActiveValidation(inputEmail);
+      // labelActiveValidation(inputPwd);
+    });
+    $('.label').click(function() {
+      if ($(this).hasClass('email')) {
+        labelActiveValidation($(this).next().find('input[type="email"]'));
+      }
+      if ($(this).hasClass('passwd')) {
+        labelActiveValidation($(this).next().find('input[type="password"]'));
+      }
+      var $target = $(this).next().find('input[type="text"]');
+      if ($target.length > 0 ) {
+        $target.get(0).focus();
+      }
+    });
+    $(inputEmail).focusin(function() {
+      labelActivation(inputEmail);
+    });
+    $(inputPwd).focusin(function() {
+      labelActivation(inputPwd);
+    });
+    $(inputEmail).change(function() {
+      labelActivation(inputEmail);
+    });
+    $(inputPwd).change(function() {
+      labelActivation(inputPwd);
+    });
+    $(inputEmail).focusout(function() {
+      labelActiveValidation(inputEmail);
+    });
+    $(inputPwd).focusout(function() {
+      labelActiveValidation(inputPwd);
+    });
+
+    // 저장된 쿠키값을 가져와서 ID 칸에 넣어준다. 없으면 공백으로 들어감.
+    var userInputId = getCookie("userInputId");
+    $("input[name='email']").val(userInputId);
+
+    if($("input[name='email']").val() != ""){ // 그 전에 ID를 저장해서 처음 페이지 로딩 시, 입력 칸에 저장된 ID가 표시된 상태라면,
+      $("#idSaveCheck").attr("checked", true); // ID 저장하기를 체크 상태로 두기.
+      $("#idCheckIcon").addClass("checked");
+    }
+
+    $("#idSaveCheck").change(function(){ // 체크박스에 변화가 있다면,
+      if($("#idSaveCheck").is(":checked")){ // ID 저장하기 체크했을 때,
+        var userInputId = $("input[name='email']").val();
+        setCookie("userInputId", userInputId, 7); // 7일 동안 쿠키 보관
+        $("#idCheckIcon").addClass("checked");
+      }else{ // ID 저장하기 체크 해제 시,
+        deleteCookie("userInputId");
+        $("#idCheckIcon").removeClass("checked");
+      }
+    });
+
+    // ID 저장하기를 체크한 상태에서 ID를 입력하는 경우, 이럴 때도 쿠키 저장.
+    $("input[name='email']").keyup(function(){ // ID 입력 칸에 ID를 입력할 때,
+      if($("#idSaveCheck").is(":checked")){ // ID 저장하기를 체크한 상태라면,
+        var userInputId = $("input[name='email']").val();
+        setCookie("userInputId", userInputId, 7); // 7일 동안 쿠키 보관
+      }
+    });
+
+  });
+</script>
+<style>
+
+  #popup {width:404px;height:auto;position:fixed;top:0;right:0;z-index:9999;background:#000;color:#fff;padding:2px;font-size:14px;letter-spacing:0.03em;visibility:hidden;}
+  #popupImage {width:400px;height:400px;}
+  #popup .preload {position:absolute;top:-26px;left:0;right:0;bottom:0;margin:auto;width:64px;height:64px;}
+  #popup label {cursor:pointer;margin:0;}
+  #popup .btn-wrapper {position:relative;background:#fff;width:100%;padding:10px;white-space:nowrap;}
+  #popup .btn-wrapper .btn {color:#00be95;padding:15px 0;text-align:center;border:1px solid #ddd;border-radius:0; width:185px;}
+  #popup .btn-close-wrapper {position:relative;cursor:pointer;height:30px;line-height:32px;}
+  #popup .close-day {position:absolute;right:10px;}
+  #popup .close {position:absolute;right:10px;cursor:pointer;color:#fff;}
+  .main-mouse-wrapper {position: fixed;z-index: 998;bottom: 40px;animation: bounce 1.8s infinite;width: 17px;left: 50%;}
+  #trigger {position: absolute;top: 100vh;}
+  .intro-wrapper.active .stripe-01 {position: relative!important;margin-top: 100vh;}
+  .intro-wrapper.active + .relative-wrapper {display: none;}
+  .main {width: 100%;}
+  .intro-wrapper {height: 100vh;}
+  .video-wrapper.intro {height: 100vh;position: absolute;z-index: 5;background-color: transparent;top:69px;box-shadow: 0 12px 12px 0 rgba(0,0,0,0.2);}
+  .video-wrapper.intro .content {height: 100%;position:relative;margin:0;}
+  .video-wrapper.intro .video {height: 100vh;position: absolute;transform: translateX(-100%);}
+  .video-wrapper.intro .video,
+  .video-wrapper.intro .mainbg {transition: all 0.3s ease-in;}
+  .video-wrapper.intro.video-active .video {transform: translateX(0);}
+  .video-wrapper.intro.video-active .mainbg {transform: translateX(100%);}
+  .content {font-family:'nanum barun gothic',sans-serif;position:absolute;left:50%;margin-left:-836px; top:50px;color: #000; opacity: 0;z-index: 3;}
+  .content .maintitle {font-family:'nanum barun gothic light',sans-serif;font-size:48px;line-height:58px;letter-spacing:0.05em;}
+  .content .sub-title {font-size:16px;line-height:22px;letter-spacing:0.05em;margin:30px 0 75px;}
+  .content .sub-title p {line-height:30px;}
+  .content a.btn {color:#14b759;font-family:'nanum barun gothic',sans-serif;background:#fff;border-radius:32px;font-size:22px;padding:0;border:1px solid #14b759;letter-spacing:0.05em;width: 260px;line-height: 60px;}
+  .content a.btn:hover {background: #14b759; color:#fff;}
+
+  .video-wrapper {width:100%;height:100vh;position:relative;margin-top:-69px;background:#000;overflow: hidden; min-height: 570px;}
+  .video-wrapper .mobile_thumb {width:100%;height:100%;display:none;}
+  .video-wrapper .mainbg {width: 100%;position: relative; background: url("/images/mainbg/aty_m_visual01.jpg") no-repeat; height: 100vh; background-size: cover; background-position: center;min-height: 570px;background: none;}
+  .video-wrapper .dark-wrapper {position: absolute;width: 100%;height: 100%; top: 0; background: rgba(0,0,0,0.7);z-index: 2;}
+  .video {width:100%;overflow:hidden;}
+  .video .video-frm {height:100%;width:100%;position:absolute;z-index: 2;}
+  .video .video-frm-new {height:762px;width:1112px;position:absolute;z-index: 2;box-shadow:0px 5px 36px 0 rgba(0,0,0,0.3);border-radius:8px;left:50%;top:0;bottom:60px;margin:auto;transform:translate(-290px,-100px);overflow:hidden;opacity:0;transition:all 0.5s ease-in-out;}
+  .video .video-frm-new iframe {height:calc(100% + 112px);}
+  .video .video-frm-new.active {opacity:1;transform:translate(-290px,0);}
+  .bg-wrapper {width:100%;height:100%;position:absolute;top:0;left:0;
+    /*background:url("../images/mainbg/aty_m_patten01.png") repeat top left;*/
+    opacity:1;z-index:2}
+  .bg-wrapper:after {content:'';width:100%;height:100%;background:#000;display:block;opacity:0.35;}
+  .video-wrapper .content {position:absolute;height:100%;width:100%;z-index:3;top:0;left:0;margin:auto; opacity: 1 ; margin-left: 20px;}
+  .video-wrapper .content .main {width:1280px;height:100%;position:absolute;top:0;bottom:0;left: 0;right: 0;margin:auto;color:#fff;z-index:5;}
+  .video-wrapper .content .main .main-wrapper {position: absolute;height: 400px;top: 0;bottom: 0;margin:auto;}
+  .video-wrapper .content .maintitle {font-size:64px;line-height:80px;color:#000;width:500px;height:200px;position:absolute;top:0px;bottom:600px;left:50%;margin:auto;transform:translateX(-850px);}
+  .video-wrapper .content .notice-wrapper {position: absolute;bottom: 60px;font-family: dotum;font-size: 12px;letter-spacing: 0.1em;left:50%;transform:translateX(-850px);}
+  .video-wrapper .content .notice-wrapper .label {color:#000;font-family: 'nanum barun gothic',sans-serif;font-weight: 400;font-size:14px;letter-spacing:0em;}
+  .video-wrapper .content .notice-wrapper .list-items .list-item {color:#8f8f8f;line-height:30px;}
+  .video-wrapper .content .notice-wrapper .list-items .list-item:hover {color:#14b759;}
+  .video-wrapper .content .sub-title {font-family:'noto sans kr';font-size:17px; line-height:26px;margin-top:10px;color:#000; font-weight: 300; position:absolute;left:50%;top:0px;bottom:200px;margin:auto;transform:translateX(-850px);width:500px;height:140px;white-space:nowrap;}
+  .video-wrapper .content .main-btn-wrapper {width:500px;height:60px;position:absolute;left:50%;top:0px;bottom:-100px;transform:translateX(-850px);margin:auto;}
+  .video-wrapper .content .main-btn-wrapper .btn {background:#000;border-color:#000;}
+  .video-wrapper .content .main-btn-wrapper .btn:hover {color:#000;}
+  .video-wrapper .content .main-mobile-image {width:328px;height:621px;background:url("/images/mainbg/aty_img_main_01.png") no-repeat center;position:absolute;left:50%;bottom:0;margin:auto;z-index:4;transform:translate(820px,100px);opacity:0;transition:all 0.5s ease-in-out;}
+  .video-wrapper .content .main-mobile-image.active {transform:translate(820px,0);opacity:1;}
+  .video-wrapper .content .main-mobile-image .views {position:absolute;top:136px;left:18px;width:291px;height:391px;overflow:hidden;}
+  .video-wrapper .content .main-mobile-image .views img {position:absolute;width:100%;height:auto;top:0;left:0;}
+  .video-wrapper .content .btn {width:260px;height:62px;line-height:62px;font-size:24px;background:#14b759;color:#fff;padding:0;border-radius:32px;}
+  .video-wrapper .content .btn:hover {color: #14b759; background: #fff;}
+  .video-wrapper .content .small-title {font-family:'nanum barun gothic light',sans-serif;font-size:23px;line-height:23px;margin-bottom:180px}
+  .embed-container {margin-bottom:114px;}
+  .page-usage.mobile ,.video.mobile {display: none;}
+
+  .stripe-01 {height: 100vh;background: url("/images/mainbg/aty_m_bg02.jpg") no-repeat; background-size: cover; background-position: center; overflow: hidden;position: fixed;}
+  .page-01 { background: url("/images/mainbg/aty_m_img01.png") no-repeat; width: 1322px;height: 600px;position: absolute; left: 50%; top: 952px ;margin-left: 600px; opacity: 0;}
+  .page-02 { background: url("/images/mainbg/aty_m_img02.png") no-repeat; width: 1322px;height: 555px;position: absolute; left: 50%; top: 987px; margin-left: 1080px; opacity: 0;}
+  .stripe-01 .content {top: 250px;}
+  @media screen and (max-width:2000px) {
+    .video-wrapper .content .maintitle {transform:translate(-698px,110px) scale(0.7);}
+    .video-wrapper .content .sub-title {transform:translate(-698px,10px) scale(0.7);}
+    .video-wrapper .content .main-btn-wrapper {transform:translate(-702px,-31px) scale(0.7);}
+    .video-wrapper .content .notice-wrapper {transform:translate(-622px, 30px);}
+    .video-wrapper .content .notice-wrapper .label {font-size:12px;font-family:dotum;}
+    .video-wrapper .content .notice-wrapper .list-items .list-item {font-size:12px;line-height:26px;}
+    .video .video-frm-new.active  {transform: translate(-360px,30px) scale(0.7);}
+    .video-wrapper .content .main-mobile-image.active {transform: translate(530px,30px) scale(0.7);}
+  }
+  @media screen and (max-width:1440px) {
+    .video-wrapper .content .maintitle {transform:translate(-598px,190px) scale(0.6);}
+    .video-wrapper .content .sub-title {transform:translate(-598px,100px) scale(0.6);}
+    .video-wrapper .content .main-btn-wrapper {transform:translate(-602px,41px) scale(0.6);}
+    .video .video-frm-new.active  {transform: translate(-400px,30px) scale(0.5);}
+    .video-wrapper .content .main-mobile-image.active {transform: translate(354px,90px) scale(0.5);}
+    .video-wrapper .content .notice-wrapper {transform:scale(0.9) translate(-583px,70px)}
+
+  }
+  @media screen and (min-height:1441px) {
+    .video-wrapper .content .maintitle {transform:translate(-250px);top:-35%;text-align:center;}
+    .video-wrapper .content .sub-title {transform:translate(-250px);top:-35%;text-align:center;}
+    .video-wrapper .content .main-btn-wrapper {transform:translate(-250px);top:-35%;text-align:center;}
+    .video .video-frm-new.active  {transform: translate(-606px);top:30%;}
+    .video-wrapper .content .main-mobile-image.active {transform: translate(425px,475px);bottom:auto;top:30%;}
+    .video-wrapper .content .notice-wrapper {transform:translate(-606px);}
+  }
+  @media screen and (min-height:1441px) and (max-height:1750px) {
+    .video-wrapper .content .maintitle {transform:translate(-250px) scale(0.8);top:-35%;text-align:center;}
+    .video-wrapper .content .sub-title {transform:translate(-250px,-70px) scale(0.8);top:-35%;text-align:center;}
+    .video-wrapper .content .main-btn-wrapper {transform:translate(-250px,-120px) scale(0.8);top:-35%;text-align:center;}
+    .video .video-frm-new.active  {transform: translate(-606px,-70px) scale(0.9);top:30%;}
+    .video-wrapper .content .main-mobile-image.active {transform: translate(425px,405px) scale(0.9);bottom:auto;top:30%;}
+    .video-wrapper .content .notice-wrapper {transform:translate(-556px);}
+
+  }
+  @media screen and (max-width:1730px) {
+    .content {margin-left:-600px;margin-top: -250px;}
+    .content .maintitle {font-size: 32px;}
+    .content .sub-title {font-size: 14px;font-family: Arial,sans-serif;}
+    /*.content a.btn {line-height: 40px; font-size: 18px;}*/
+    .stripe-01 {height: 100vh;}
+    .stripe-01 .content {top: 300px;}
+    .stripe-01 .page-01 {transform: scale(0.7) translate(-50px,-300px);}
+    .stripe-01 .page-02 {transform: scale(0.7) translate(-140px,-180px);}
+    .stripe-02 {height: 1024px!important;}
+    .stripe-02 .page-people {background-size: cover; height: 1024px;background-position: 400px;}
+    .stripe-03 {height: 1024px!important;background-size: cover !important;}
+    .stripe-03 .page-balloon {background-size: 55%;height: 1024px;}
+    .stripe-04 .content {left: auto!important; right: 10px; margin-left: 0!important;}
+    .stripe-05 {height: 1024px!important;background-position: 590px!important;}
+    .stripe-05 .page-mobile01 {right: auto; left: 882px; margin-top: -211px;}
+  }
+  @media screen and (max-width:1480px) {
+    .stripe-03 .page-balloon {background-size: 64%;height: 1024px;}
+
+  }
+  @media screen and (max-width:767px) {
+    .content a.btn {line-height: 40px; font-size: 19px;}
+    .video-wrapper .content {text-align: left;}
+    .video-wrapper .content .maintitle {font-size:46px;line-height:46px;}
+    .video-wrapper .content .sub-title {font-size:21px;margin-top:20px;margin-bottom:50px;}
+    .video-wrapper .content .small-title {font-size:16px;margin-top:25px;}
+    .content {text-align: center;left: 0; right: 0; margin:auto;top: 100px!important;}
+    .content .autoBR {display:inline-block;}
+    .content .maintitle {font-size:18px;line-height:20px;}
+    .content .sub-title {font-size:12px;line-height:16px;margin-top:20px!important;}
+    .content .sub-title p {line-height:18px;}
+    .content a.btn {font-size:19px;}
+    .video-wrapper .content a.btn {width:158px;height:38px;line-height:38px;font-size:19px;}
+    .stripe-04 .content {left: auto; right: 10px;}
+  }
+  @media screen and (max-width:560px) {
+    .video-wrapper {height: 451px!important;}
+    .video-wrapper .mainbg {height:100%;background-position: -250px}
+    .video-wrapper .content {top:100px !important;margin-left: 8px;}
+    .video-wrapper .content .main {height: 520px;top: 10px;margin:0;}
+    .video-wrapper .content .main .main-wrapper {height: 100%;left: 30px;top:40px;}
+    .video-wrapper .content .main .notice-wrapper {bottom: 120px;}
+    .video-wrapper .content .maintitle {margin-bottom: 0px;}
+    .video-wrapper .content .sub-title {margin-bottom: 0!important;}
+    .video-wrapper .content .small-title {margin-bottom: 30px;margin-top: 0px;}
+    .stripe-01 {background-position: bottom; background-size: 550px;height: 501px!important;}
+    .stripe-01 .page-01 {transform: scale(0.2) translate(-580px, -2150px);}
+    .stripe-01 .page-02 {transform: scale(0.2) translate(-1380px , -1380px);}
+    .stripe-02 {height: 650px!important;}
+    .stripe-02 .page-people {width:100%;height: 100%;background-image: url("/images/mainbg/aty_m_img20.jpg");background-position: center bottom; background-size: 560px;}
+    .stripe-03 .page-balloon {top: 170px;background-size: 100%;opacity: 0.8}
+    .stripe-03,.stripe-04,
+    .stripe-05,.stripe-06,.stripe-07,.stripe-08 {height: 540px!important;}
+    .content {top:40px!important;}
+    .sub-title {margin-bottom: 45px!important;}
+    .stripe-04 {height: 250px!important;}
+    .stripe-04 .video-wrapper {height: 100%;min-height: auto;}
+    .stripe-04 .video {height: 100%;}
+    .stripe-04 .content {top:28px!important;}
+    .stripe-05 {background-size: 450px!important; background-position: 0 310px!important;}
+    .stripe-05 .page-mobile01 {left: 0; right: 0; transform: scale(0.3) translate(-230px, -240px);}
+    .stripe-06 .content {top:60px!important;}
+    .stripe-06 .content .sub-title {margin-bottom: 45px;}
+    .stripe-06 .page-usage-wrapper {top: 300px;height: 190px;}
+    .stripe-06 .page-usage {width: 260px;height: 150px;}
+    .stripe-07 .page-mobile02 {transform: scale(0.3) translateY(-700px);margin-left: -260px;}
+    .stripe-07 .page-mobile03 {transform: scale(0.3) translateY(-1130px) ;margin-left: -190px!important;}
+    .stripe-08 {background-position: -50px!important;}
+    .stripe-08 .content {top: 160px!important;}
+    .page-usage:not(.mobile) ,.video:not(.mobile) {display: none;}
+    .page-usage.mobile ,.video.mobile {display: block;}
+    span.mobileBr {display: block;}
+    div.mobileBr {display: inline-block;}
+  }
+  @media screen and (min-width:561px) and (max-width:1080px) {
+    .content .sub-title {margin:20px 0 50px;}
+    .content {text-align: center;left: 0; right: 0; margin:auto;top: 70px!important;}
+    .content .autoBR {display:inline-block;}
+    .stripe-01 .page-01 {transform: scale(0.7) translate(256px,-81px);}
+    .stripe-01 .page-02 {transform: scale(0.7) translate(130px,-50px);}
+    .stripe-02 , .stripe-03 , .stripe-07 , .stripe-08 {height: 1050px!important;}
+    .stripe-06 {height: 689px!important;}
+    .stripe-02 .page-people {width:100%;height: 100%;background-image: url("/images/mainbg/aty_m_img20.jpg");background-position: center bottom; background-size: 1080px;}
+    .stripe-03 .page-balloon {top: 220px;background-size: 100%;opacity: 0.8;height: 100%;}
+    .stripe-04 {height: 450px!important;}
+    .stripe-04 .content {top:28px!important;}
+    .stripe-04 .video-wrapper .video.mobile img {width: auto;height: 450px!important;}
+    .stripe-05 {background-size: 1080px!important; background-position: center 490px!important;}
+    .stripe-05 .page-mobile01 {left: 50%; margin-left:-389px; transform: scale(0.7) translate(0px, 410px);}
+    .stripe-06 .content {top:60px!important;}
+    .stripe-06 .content .sub-title {margin-bottom: 45px;}
+    .stripe-06 .page-usage-wrapper {top: 500px;height: 190px;}
+    .stripe-06 .page-usage {width: 260px;height: 150px;}
+    .stripe-07 .page-mobile02 {transform: scale(0.7) translateY(150px);margin-left: -300px;}
+    .stripe-07 .page-mobile03 {transform: scale(0.7) translateY(10px) ;margin-left: -140px!important;}
+  }
+  @media screen and (min-width:561px) and (max-width:740px) {
+    .stripe-03 {height: 800px!important;}
+  }
+
+  @media (min-aspect-ratio: 16/9) {
+    .video .video-frm  { height: 300%; top: -100%; }
+  }
+  @media (max-aspect-ratio: 16/9) {
+    .video .video-frm { width: 300%; left: -100%; }
+  }
+  @media screen and (max-width:1280px) {
+    #trigger {top:1020px;}
+    .stripe-01 {position:relative;top:70px;}
+    .intro-wrapper {height:1900px;}
+    .intro-wrapper + .relative-wrapper {display:none;}
+    .intro-wrapper.active .stripe-01 {margin-top:0;}
+    .video-wrapper.intro {position:relative;height:1020px;box-shadow:none;border-bottom:1px solid #ddd;}
+    .video-wrapper.intro .video {overflow:visible;height:100%;padding:20px!important;}
+    .video-wrapper .content {top:0!important;}
+    .video-wrapper .content .maintitle {transform:translate(-250px) scale(0.6);top:30px;bottom:auto;text-align:center;}
+    .video-wrapper .content .sub-title {transform:translate(-250px) scale(0.6);top:150px;bottom:auto;text-align:center;}
+    .video-wrapper .content .main-btn-wrapper {transform:translate(-250px) scale(0.6);top:270px;bottom:auto;text-align:center;}
+    .video .video-frm-new.active  {transform: translate(-606px) scale(0.5);top:150px;bottom:auto;}
+    .video-wrapper .content .main-mobile-image.active {transform: translate(105px,175px) scale(0.5);bottom:auto;top:150px;}
+    .video-wrapper .content .notice-wrapper {transform:translate(-320px);text-align:left;}
+  }
+  @media screen and (max-width:1280px) and (max-height:700px) {
+    .intro-wrapper {height:1600px;}
+    .main-right-nav ul {top:230px;}
+  }
+</style>
+<div class="main-mouse-wrapper">
+  <img src="/images/main_mouse.png"/>
+</div>
+<div class="main-right-nav">
+  <ul>
+    <li data-link="intro-wrapper" class="selected">
+      <div class="line"></div>
+      <span class="title-more">Intro</span>
+    </li>
+    <li data-link="stripe-01">
+      <div class="line"></div>
+      <span class="title-more">Template</span>
+    </li>
+    <li data-link="stripe-02">
+      <div class="line"></div>
+      <span class="title-more">Analysis</span>
+    </li>
+    <li data-link="stripe-03">
+      <div class="line"></div>
+      <span class="title-more">SEO Policy</span>
+    </li>
+    <li data-link="stripe-04">
+      <div class="line"></div>
+      <span class="title-more">New Style</span>
+    </li>
+    <li data-link="stripe-05">
+      <div class="line"></div>
+      <span class="title-more">Design</span>
+    </li>
+    <li data-link="stripe-06">
+      <div class="line"></div>
+      <span class="title-more">Effect</span>
+    </li>
+    <li data-link="stripe-07" class="logout">
+      <div class="line"></div>
+      <span class="title-more">SNS</span>
+    </li>
+    <li data-link="stripe-08">
+      <div class="line"></div>
+      <span class="title-more">Join Us</span>
+    </li>
+  </ul>
+</div>
+<div class="intro-wrapper">
+  <div class="video-wrapper intro video-active" id="main">
+    <div class="video" style="padding:110px 40px 40px;background:#fff;">
+      <div class="content-wrapper" style="background:#eee;height:100%;position:relative;">
+        <div class="content">
+          <div class="main-wrapper">
+            <div class="maintitle">ATY에만 있는<br />스마트한 쇼핑몰</div>
+            <div class="sub-title">
+              쇼핑몰 제작부터 관리까지 누구나 쉽고 빠르게 할 수 있습니다.<br />
+              언제든지 직접 수정과 관리가 가능합니다.<br />
+              ATY의 스마트한 디자인편집기와 관리시스템이 실시간으로 반영합니다.<br /><br />
+              지금 바로 ATY의 스마트한 쇼핑몰을 만나보세요!
+            </div>
+            <div class="main-btn-wrapper">
+              <a href="javascript:btn_join();" class="btn">무료로 시작하기</a>
+            </div>
+          </div>
+          <div class="notice-wrapper">
+            <ul class="list-items">
+              <a href="/support/news_view/119" class="link">
+                <li class="list-item">
+                  <span class="label">[NEWS]</span>
+                  2023년 1/4분기(1월~3월) 세금계산서/현금영수증 신청 및 마감 안내 (계좌이체 및 가상계좌에 한해 발급) 2023-03-24 &gt;
+                </li>
+              </a>
+              <a href="/support/news_view/118" class="link">
+                <li class="list-item">
+                  <span class="label">[NEWS]</span>
+                  2023.03.17 임시 휴무 안내 2023-03-15 &gt;
+                </li>
+              </a>
+              <a href="/support/news_view/117" class="link">
+                <li class="list-item">
+                  <span class="label">[NEWS]</span>
+                  2023년 설 연휴 휴무 안내  2023-01-09 &gt;
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div class="video-frm-new">
+            <iframe src="https://player.vimeo.com/video/241479847?autoplay=1&amp;loop=1&amp;autopause=0&byline=false&title=false&portrait=false&muted=1" width="100%" height="100%" frameborder="0" hspace="0" vspace="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+          <div class="main-mobile-image">
+            <div class="views" id="views">
+              <img src="/images/mainbg/aty_img_main_01.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mainbg"></div>
+    </div>
+  </div>
+  <div id="trigger"></div>
+
+  <div class="main stripe-01">
+    <div class="page-01"></div>
+    <div class="page-02"></div>
+    <div class="content" id="step1">
+      <div class="maintitle">자꾸만 눈길이 가는 <br/> 사이트를 가져보세요!</div>
+      <div class="sub-title">
+        <p>ATY가 제공하는 최신 기술과 콘텐츠를 활용해 <br />
+          누구나 직접 돋보이는 사이트를 만들 수 있습니다.<br />
+          <span class="mobileBr">고객 마음을 사로잡는 세련되고 멋진 </span>사이트를 제작해 보세요!<br />
+      </div>
+      <a href="/design" class="btn">템플릿 더 보기</a>
+    </div>
+  </div>
+</div>
+<div class="relative-wrapper"></div>
+<div id="more"></div>
+<!-- <div id="popup">
+	<a href="https://aty1231.aty.kr/1522311753411/main#" target="_blank" style="display:block;height:400px;">
+		<img id="popupImage" src="/images/popup/20180808.png?v=2018080801" alt="무료교육" />
+	</a>
+	<div class="btn-wrapper">
+		<a href="https://aty1231.aty.kr/1522311753411/main#" target="_blank" class="btn" style="margin-right:5px;">신청</a>
+		<a href="#" onClick='closeWin(false,"popup");return false;' class="btn">닫기</a>
+	</div>
+	<div class="btn-close-wrapper">
+		<div class="close-day">
+			<label>
+				오늘하루 이 창을 열지 않음
+				<input type="checkbox" id="check-close" val="shutdown" onClick='closeWin(true,"popup");'/>
+			</label>
+		</div>
+	</div>
+</div> -->
+<script src="/js/TweenMax.min.js"></script>
+<script src="/js/ScrollMagic.js"></script>
+<script src="/js/animation.gsap.js"></script>
+<script>
+  function setCookie( name, value , expiredays ) {
+    var todayDate = new Date();
+    todayDate.setDate( todayDate.getDate() + expiredays );
+    document.cookie = name + '=' + escape( value ) + '; path=/; expires=' + todayDate.toGMTString() + ';'
+  }
+  function closeWin(flag, layer) {
+    if(flag) {
+      setCookie( layer, 'done',1);
+    }
+    document.all[layer].style.visibility = 'hidden';
+  }
+  window.onload = function() {
+  }
+  function getWrapper() {
+    var h = $(".stripe-01").height();
+    var w = $(".stripe-01").width();
+    $(".relative-wrapper").css({"width":w , "height":h , "marginTop":$(window).scrollTop()});
+  }
+
+  function videoActive() {
+    console.log("call");
+    if($("#main").hasClass("video-active")){
+      $("#main").removeClass("video-active");
+    }else{
+      $("#main").addClass("video-active");
+    }
+  }
+  var controller = new ScrollMagic.Controller();
+  // new ScrollMagic.Scene({triggerElement:"#main", duration:"100%"})
+  // 		.offset("0")
+  // 		.setPin(".stripe-01",{spacerClass:"testtest"})
+  // 		.addTo(controller);
+  new ScrollMagic.Scene({triggerElement: "#trigger", offset:"0"})
+          .setTween(".page-01",0.5,{top:513 , marginLeft:"-439", opacity:1})
+          .addTo(controller);
+  new ScrollMagic.Scene({triggerElement: "#trigger" , offset:"0"})
+          .setTween(".page-02",0.5,{top:316 , marginLeft:"-271" , opacity:1, delay : 0.2})
+          .addTo(controller);
+  new ScrollMagic.Scene({triggerElement: ".stripe-01" , offset:"-150"})
+          .setTween("#step1",0.5,{opacity:1 })
+          .addTo(controller);
+
+  var pageLoad = false;
+  var docheight = $(document).height();
+  $(document).scroll(function(){
+    var scrollhead = $(window).scrollTop();
+    var screenh =$(window).height();
+    var viewHeight = $('.mainbg').height();
+    var loadPoint = docheight - screenh - 600;
+    var opacity = parseFloat(scrollhead / viewHeight) ;
+    var docuh = $(document).height();
+    if(scrollhead+screenh < docuh) {$(".main-mouse-wrapper").css("visibility","visible");}
+    else {$(".main-mouse-wrapper").css("visibility","hidden");}
+    if(pageLoad === true) {
+      if(scrollhead > viewHeight) {
+        $(".intro-wrapper").addClass("active");
+        $(".video-frm-new").removeClass("active");
+        $(".main-mobile-image").removeClass("active");
+      }else {
+        $(".intro-wrapper").removeClass("active");
+        $(".video-frm-new").addClass("active");
+        $(".main-mobile-image").addClass("active");
+        $(".relative-wrapper").css("marginTop",scrollhead);
+        if(opacity != 0 && opacity != 'undefined') {
+          $(".stripe-01").css({"opacity":opacity});
+        }
+        console.log($(".stripe-01").height()/2+" / "+scrollhead);
+        if($(".stripe-01").height()/2 < scrollhead ) {
+          $(".main-right-nav").removeClass("dark");
+          // $(".main-right-nav").removeClass("intro");
+          $(".main-right-nav ul li").removeClass("selected");
+          $(".main-right-nav ul li:nth-child(2)").addClass("selected");
+        } else {
+          $(".main-right-nav").removeClass("dark");
+          // $(".main-right-nav").addClass("intro");
+          $(".main-right-nav ul li").removeClass("selected");
+          $(".main-right-nav ul li:nth-child(1)").addClass("selected");
+        }
+      }
+    }else {
+      if(scrollhead > viewHeight) {
+        $(".intro-wrapper").addClass("active");
+        $(".video-frm-new").removeClass("active");
+        $(".main-mobile-image").removeClass("active");
+      }else {
+        $(".intro-wrapper").removeClass("active");
+        $(".video-frm-new").addClass("active");
+        $(".main-mobile-image").addClass("active");
+        $(".relative-wrapper").css("marginTop",scrollhead);
+        if(opacity != 0 && opacity != 'undefined') {
+          $(".stripe-01").css({"opacity":opacity});
+        }
+      }
+      if( scrollhead > loadPoint) {
+        pageLoad = true;
+        $("#blkLayer").html('');
+        $.ajax({
+          url:"/main/more",
+          success : function(data) {
+            $("#more").html(data);
+          }
+        });
+      }
+    }
+  });
+  var curYPos = 0,curTPos = 0, curDown = false;
+  function dragScroll(y,flag) {
+    var result;
+    if(flag) {
+      result = y - curYPos;
+    }
+    return result;
+  }
+
+  function btn_join() {
+    var sess = "";
+    if (sess) {
+      window.location.href = '/myAty';
+    } else {
+      $('#btnJoin').trigger('click');
+      window.location.href='/#login';
+    }
+  }
+
+  $(document).ready(function(){
+    //view popup
+    var cookiedata = document.cookie;
+    var todayDate = new Date();
+    var hours = todayDate.getHours();
+    var dateStr = todayDate.getDay();
+    var popupID = 'popup';
+    if( cookiedata.indexOf(popupID+'=done')>=0 ) {
+      $("#"+popupID).css('visibility','hidden');
+    } else {
+      $("#"+popupID).css('visibility','visible');
+    }
+
+    $('#popupImage').load(function(){
+      $('#popup .preload').css("display","none");
+    })
+    $('#popup').on("click",".close",function(){
+      var input = $('#check-close').val();
+      console.log('input',input);
+    })
+
+    getWrapper();
+    $(".video-frm-new").addClass("active");
+    $(".main-mobile-image").addClass("active");
+    var viewsImageSize = 795;
+    $("#views").mousedown(function(e){
+      e.preventDefault();
+      curDown = true;
+      curYPos = e.pageY;
+      console.log("down : "+e.pageX+" , "+e.pageY);
+    }).mouseup(function(e){
+      e.preventDefault();
+      var newTPos = curTPos + dragScroll(e.pageY,curDown);
+      if(newTPos > 0) {curTPos = 0;}
+      else if(newTPos < -viewsImageSize ) {curTPos = -viewsImageSize;}
+      else {curTPos = newTPos;}
+      curDown = false;
+    }).mouseleave(function(e){
+      e.preventDefault();
+      var newTPos = curTPos + dragScroll(e.pageY,curDown);
+      if(newTPos > 0) {curTPos = 0;}
+      else if(newTPos < -viewsImageSize ) {curTPos = -viewsImageSize;}
+      else {curTPos = newTPos;}
+      curDown = false;
+    }).mousemove(function(e){
+      e.preventDefault();
+      if(curDown) {
+        var $target = $(this).find("img");
+        if(isNaN(curTPos)) {
+          curTPos = 0;
+          curYPos = 0;
+          $target.css("top",0);
+          console.log("NaN bojung");
+        }
+        var posNew = dragScroll(e.pageY,curDown);
+        var posOld = curTPos;
+        var posAfter = posOld + posNew;
+        if(0 > posAfter && posAfter > -viewsImageSize ) {
+          console.log("posAfer : "+posAfter);
+          $target.css("top",posAfter);
+        }else {
+          console.log("endOfContents");
+        }
+      }
+    });
+    $(window).resize(function(){
+      getWrapper();
+    });
+    $('.main-right-nav ul li').click(function(){
+      var target = "."+$(this).data('link');
+      if($(target).length == 0) {
+        pageLoad = true;
+        $("#blkLayer").html('');
+        $.ajax({
+          url:"/main/more",
+          async:false,
+          success : function(data) {
+            $("#more").html(data);
+          }
+        });
+      }
+      $(".main-right-nav ul li").removeClass("selected");
+      $(this).addClass("selected");
+      var offset = $(target).offset();
+      console.log(target);
+      console.log(offset);
+      switch(target) {
+        case ".intro-wrapper" :
+          offset.top = 0;
+          // $(".main-right-nav").addClass("intro");
+          break;
+        case ".stripe-01" :
+          $(".intro-wrapper").addClass("active");
+          $(".main-right-nav").removeClass("intro");
+          offset = $(target).offset();
+          offset.top -= 60;
+          break;
+        case ".stripe-02" :
+          $(".main-right-nav").removeClass("dark");
+          $(".main-right-nav").removeClass("intro");
+          break;
+        case ".stripe-03" :
+          $(".main-right-nav").removeClass("dark");
+          $(".main-right-nav").removeClass("intro");
+          break;
+        case ".stripe-04" :
+          $(".main-right-nav").removeClass("dark");
+          $(".main-right-nav").removeClass("intro");
+          break;
+        case ".stripe-05" :
+          $(".main-right-nav").addClass("dark");
+          $(".main-right-nav").removeClass("intro");
+          break;
+        case ".stripe-06" :
+          $(".main-right-nav").removeClass("dark");
+          $(".main-right-nav").removeClass("intro");
+          break;
+        case ".stripe-07" :
+          $(".main-right-nav").removeClass("dark");
+          $(".main-right-nav").removeClass("intro");
+          break;
+        case ".stripe-08" :
+          $(".main-right-nav").removeClass("dark");
+          $(".main-right-nav").removeClass("intro");
+          break;
+      }
+      $("html,body").animate({scrollTop : offset.top}, 400);
+    });
+  });
+</script><div class="footer1">
+  <div class="container">
+    <div class="twitter_feeds_two w-100pct">
+      <div class="left"><img src="/images/footer-logo.png" alt="Aty" /></div>
+      <div class="right">
+        <p class="footerLink">
+          <a href="/about/AtyCompany" target="_blank">회사소개</a> &Iota;
+          <a href="/about/terms">이용약관</a> &Iota;
+          <a href="/about/privacy">개인정보보호정책</a>
+          <!-- &Iota; <a href="#">제휴신청</a>-->
+        </p>
+        (주)아티컴퍼니 | 대표이사: 박철웅 | 소재지:서울 금천구 가산디지털2로 70 402호 <br />Tel: 02-1644-7459 / Fax: 0505-300-6232 / support@aty.kr <br />사업자등록번호: 553-88-00064 | 통신판매업신고 제2022-서울금천-1430호                <em><a href="http://ftc.go.kr/info/bizinfo/communicationList.jsp" target="_blank">사업자정보확인</a></em>
+      </div>
+
+    </div>
+  </div>
+  <!-- end twitter feeds -->
+</div>
+<!-- end footer -->
+
+<div class="clearfix"></div>
+
+<img src="/images/loading.gif" border="0" alt="loader" id="loadingbar" style="display:none;" />
+<div name="blkLayer" id="blkLayer" style="display:none; position:absolute;  left:0px; top:0px; z-index:10001;background-color:#000000;filter:alpha(opacity=30);opacity:0.3;-moz-opacity:0.3;">
+  <table id="blkLayerTable" width="100%" height=920 cellpadding="0" cellspacing="0" align="left" border="0">
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<a href="#" class="scrollup">가장 위로</a>
+<!-- end scroll to top of the page-->
+
+<script src="/js/universal/jquery.js"></script>
+<script src="/js/jquery-ui-1.9.2.custom.min.js"></script>
+
+<!-- animations -->
+<script src="/js/animations/js/animations.min.js" type="text/javascript"></script>
+
+<!-- mega menu -->
+<script src="/js/mainmenu/bootstrap.min.js"></script>
+<script src="/js/mainmenu/customeUI.js"></script>
+
+<script src="/js/lang/ko-kr.js"></script>
+
+<!-- cubeportfolio -->
+<script type="text/javascript" src="/js/cubeportfolio/jquery.cubeportfolio.min.js"></script>
+<script type="text/javascript" src="/js/cubeportfolio/main3.js"></script>
+<script type="text/javascript" src="/js/cubeportfolio/main6.js"></script>
+
+<!-- facebook like -->
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.3&appId=1666657846891628";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- jquery jcarousel -->
+<script type="text/javascript" src="/js/carousel/jquery.jcarousel.min.js"></script>
+
+<!-- scroll up -->
+<script src="/js/scrolltotop/totop.js" type="text/javascript"></script>
+
+<!-- accordion -->
+<script type="text/javascript" src="/js/accordion/custom.js"></script>
+
+<!-- carousel -->
+<script defer src="/js/carousel/jquery.flexslider.js"></script>
+<script defer src="/js/carousel/custom.js"></script>
+
+<!-- lightbox -->
+<script type="text/javascript" src="/js/lightbox/jquery.fancybox.js"></script>
+<script type="text/javascript" src="/js/lightbox/custom.js"></script>
+
+<!-- login modal -->
+<script src="/css/modal/jquery.remodal.js"></script>
+<script src="/js/form/jquery.form.min.js"></script>
+<script src="/js/form/jquery.validate.min.js"></script>
+<script src="/js/form/jquery.modal.js"></script>
+
+<script src="/js/common.js?v=2019080901"></script><script src="https://www.youtube.com/iframe_api"></script>
+<!-- modal - You can define the global options -->
+<script>
+  // window.remodalGlobals = {
+  //   namespace: "remodal",
+  //   defaults: {
+  //     hashTracking: true,
+  //     closeOnConfirm: true,
+  //     closeOnCancel: true,
+  //     closeOnEscape: true,
+  //     closeOnAnyClick: true
+  //   }
+  // };
+</script>
+
+<!-- modal - Events -->
+<script>
+  /*
+    $(document).on("open", ".remodal", function () {
+      console.log("open");
+    });
+
+    $(document).on("opened", ".remodal", function () {
+      console.log("opened");
+    });
+
+    $(document).on("close", ".remodal", function (e) {
+      console.log('close' + (e.reason ? ", reason: " + e.reason : ''));
+    });
+
+    $(document).on("closed", ".remodal", function (e) {
+      console.log('closed' + (e.reason ? ', reason: ' + e.reason : ''));
+    });
+
+    $(document).on("confirm", ".remodal", function () {
+      console.log("confirm");
+    });
+
+    $(document).on("cancel", ".remodal", function () {
+      console.log("cancel");
+    });
+  */
+
+  //  You can open or close it like this:
+  //  $(function () {
+  //    var inst = $.remodal.lookup[$("[data-remodal-id=modal]"").data("remodal")];
+  //    inst.open();
+  //    inst.close();
+  //  });
+
+  //  Or init in this way:
+  var inst = $("[data-remodal-id=modal2]").remodal();
+  //  inst.open();
+</script>
+<script type="text/javascript">
+  (function($) {
+    "use strict";
+
+    $(function() {
+      // Validation for login form
+      $("#sky-form").validate({
+        // Rules for form validation
+        rules: {
+          email: {
+            required: true,
+            email: true
+          },
+          password: {
+            required: true,
+            minlength: 3,
+            maxlength: 20
+          }
+        },
+
+        // Messages for form validation
+        messages: {
+          email: {
+            required: lang['c45'], // 이메일 주소를 입력해 주세요.
+            email: lang['c107'] // 이메일 주소가 잘못되었습니다.
+          },
+          password: {
+            required: lang['c108'] // 비밀번호를 입력하세요.
+          }
+        },
+
+        // Do not change code below
+        errorPlacement: function(error, element) {
+          error.insertAfter(element.parent());
+        }
+      });
+    });
+  })(jQuery);
+</script>
+<script>
+  $('#MonthAgo').click(function(e) {
+    var now = new Date();
+    $('#enddate').val(setDateFormat(now));
+    now = new Date(now.getFullYear(), (now.getMonth() - 1), now.getDate());
+    $('#startdate').val(setDateFormat(now));
+  });
+
+  $('#threeMonthAgo').click(function(e) {
+    var now = new Date();
+    $('#enddate').val(setDateFormat(now));
+    now = new Date(now.getFullYear(), (now.getMonth() - 3), now.getDate());
+    $('#startdate').val(setDateFormat(now));
+  });
+
+  $(function() {
+    $("#startdate").datepicker({
+      defaultDate: "+1w",
+      changeMonth: true,
+      dateFormat: 'yy-mm-dd',
+      showOn: "button",
+      buttonImageOnly: false,
+      buttonText: "<i class='fa fa-calendar fontColor_86a0ff'></i>",
+      onClose: function(selectedDate) {
+        $("#enddate").datepicker("option", "minDate", selectedDate);
+      }
+    });
+    $("#enddate").datepicker({
+      defaultDate: "+1w",
+      changeMonth: true,
+      dateFormat: 'yy-mm-dd',
+      showOn: "button",
+      buttonImageOnly: false,
+      buttonText: "<i class='fa fa-calendar fontColor_86a0ff'></i>",
+      onClose: function(selectedDate) {
+        $("#startdate").datepicker("option", "maxDate", selectedDate);
+      }
+    });
+  });
+</script>
+
+</body>
+
+</html>
